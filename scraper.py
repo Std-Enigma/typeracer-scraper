@@ -27,7 +27,9 @@ def get_stats_table(soup: BeautifulSoup):
 def parse_table(table) -> list[TypeRacerTextData]:
     data = []
 
-    rows = table.find_all("tr")[1::] # don't include the first row since it's the table header
+    rows = table.find_all("tr")[
+        1::
+    ]  # don't include the first row since it's the table header
     for row in rows:
         row_data: list[str] = [data.text for data in row.find_all("td")]
         (id, text, difficulty) = (row_data[1], row_data[2], float(row_data[5]))
@@ -44,4 +46,4 @@ if __name__ == "__main__":
     json_data = parse_table(table)
 
     with open("data.json", "w") as file:
-        json.dump(json_data, file)
+        json.dump(json_data, file, indent=2)
