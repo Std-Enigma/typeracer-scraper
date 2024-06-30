@@ -15,3 +15,10 @@ git clone https://github.com/Std-Enigma/typeracer-scraper.git
 cd typeracer-scraper
 python scraper.py
 ```
+
+---
+<div align="center">
+
+![Python](https://img.shields.io/badge/Made%20with%20Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+</div>
