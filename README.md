@@ -15,6 +15,7 @@ git clone https://github.com/Std-Enigma/typeracer-scraper.git
 cd typeracer-scraper
 python scraper.py
 ```
+and you will find a <b><em>data.json</em></b> file in your directory that contains all the scraped data
 
 ---
 <div align="center">
